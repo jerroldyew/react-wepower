@@ -22,12 +22,6 @@
   font-size: large;
 }
 
-.jumbotron {
-  background-image: url(./assets/banner2.jpg);
-  background-size: cover;
-  color: white;
-}
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
