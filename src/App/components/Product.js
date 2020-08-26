@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import productImage from '../assets/mobil-1-5w-30-fs-square-sm.jpg';
 
 class Product extends Component {
   constructor(props) {
@@ -19,10 +20,17 @@ class Product extends Component {
       <div>
         <h2>Product Details</h2>
         <p></p>
-        <p>Name: {item.name}</p>
-        <p>Description: {item.description}</p>
-        <p>Price ($): {item.price}</p>
-        <p>Quantity: {item.quantity}</p>
+        <div class="row">
+          <div class="col">
+            <center><img src={productImage} alt="Mobil 1" width="40%" /></center>
+          </div>
+          <div class="col-7">
+            <p>Name: {item.name}</p>
+            <p>Description: {item.description}</p>
+            <p>Price ($): {item.price}</p>
+            <p>Quantity: {item.quantity}</p>
+          </div>
+        </div>
         <br></br>
       </div>
     );

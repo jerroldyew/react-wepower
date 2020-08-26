@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import productImage from '../assets/mobil-1-5w-30-fs-square-sm.jpg';
 
 class List extends Component {
 	constructor(props) {
@@ -23,11 +24,12 @@ class List extends Component {
 						{list.map((item) => {
 							return (
 								<div class="col-sm-4 p-2">
-									<div class="card">
+									<div class="card bg-light mb-3">
+										<img class="card-img-top" src={productImage} alt="Mobil 1"/>
 										<div class="card-body">
 											<h5 class="card-title">{item.name}</h5>
 											<p class="card-text">{item.description}</p>
-											<a href={`/product/${item.id}`} class="btn btn-primary">More Details</a>
+											<a href={`/product/${item.id}`} class="btn btn-outline-dark">More Details</a>
 										</div>
 									</div>
 								</div>
