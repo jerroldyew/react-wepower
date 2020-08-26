@@ -21,7 +21,7 @@ class Product extends Component {
         <p></p>
         <p>Name: {item.name}</p>
         <p>Description: {item.description}</p>
-        <p>Price: {item.price}</p>
+        <p>Price ($): {item.price}</p>
         <p>Quantity: {item.quantity}</p>
         <br></br>
       </div>
