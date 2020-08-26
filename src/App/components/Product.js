@@ -17,9 +17,12 @@ class Product extends Component {
     const { item } = this.state;
     return (
       <div>
-        <p>{item.id}</p>
-        <p>{item.title}</p>
-        <p>{item.body}</p>
+        <h2>Product Details</h2>
+        <p></p>
+        <p>Name: {item.name}</p>
+        <p>Description: {item.description}</p>
+        <p>Price: {item.price}</p>
+        <p>Quantity: {item.quantity}</p>
         <br></br>
       </div>
     );

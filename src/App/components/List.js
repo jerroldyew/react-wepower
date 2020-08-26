@@ -26,8 +26,8 @@ class List extends Component {
 									<div class="card">
 										<div class="card-body">
 											<h5 class="card-title">{item.name}</h5>
-											<p class="card-text">{item.company.catchPhrase}</p>
-											<a href={`/product/${item.id}`} class="btn btn-primary">Details</a>
+											<p class="card-text">{item.description}</p>
+											<a href={`/product/${item.id}`} class="btn btn-primary">More Details</a>
 										</div>
 									</div>
 								</div>
@@ -35,9 +35,7 @@ class List extends Component {
 						})}
 					</div>
 				) : (
-						<div>
-							<h2>No Products Available</h2>
-						</div>
+						<h2>No Products Available</h2>
 					)
 				}
 				<br></br>

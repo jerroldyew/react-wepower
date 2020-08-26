@@ -5,7 +5,8 @@ import List from './components/List';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';
-import { NoMatch } from './components//NoMatch';
+import { About } from './components/About';
+import { NoMatch } from './components/NoMatch';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={List} />
           <Route path="/product/:id" component={Product} />
+          <Route path="/about" component={About} />
           <Route component={NoMatch} />
         </Switch>
       </Router>
